@@ -126,7 +126,6 @@ header{
         top:100%;
         right: -100%;
         width: 220px;
-        height: 23.2vh;
         background-color: var(--bg-color);
         opacity: 0.8;
         display: flex;
