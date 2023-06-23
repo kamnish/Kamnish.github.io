@@ -270,6 +270,8 @@ hr{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100vw;
+        padding: 10px 5px;
     }
 
 }
