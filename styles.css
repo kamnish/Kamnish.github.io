@@ -159,53 +159,46 @@ header{
 }
 .page1{
     padding: 28px 12% 0 12% ;
-    height: 89vh;
-    width: 90vw;
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: 1fr 1fr;
+    margin-bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .myphoto{
     height: 500px; 
 }
 .name{
-    grid-area:1/1/1/1 ;
     display: flex;
     justify-content: center;
     align-items: end;
 }
-.signoff{
-    display:flex;
-    justify-content: flex-start;
-    align-items: baseline;
-    grid-area: 2/1/2/1;
 
-}
-.signoff>h2>span{
-    color: var(--main-color);
-}
 .photo{
     display: flex;
     align-items: end;
     justify-content: end;
-    grid-area: 1/2/3/2;
 }
 hr{
     border-top: solid white 2px;
 }
 @media(max-width: 1280px){
     .page1{
-        padding:  2%;
+        padding: 2% 2% 0 2% ;
         transition: .2s;
+        justify-content: space-around;
     }
 
 }
 @media(max-width:900px){
     .page1{
-        display: flex;
         flex-direction: column;
         align-items: center;
 
+    }
+    #text{
+        margin-top:3vh !important;
+        margin-bottom:5vh !important;
     }
     .myphoto{
         height: 400px;        
@@ -214,14 +207,29 @@ hr{
     .photo.o{
         order:1;
     }
+    .photo{
+        position: relative;
+        display: inline-block;
+        background: black;
+      }
+      
+    .photo::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        mask-repeat: no-repeat;
+        mask-position: center bottom;
+        mask-size: 100% 80%; 
+      }
     .name{
         order:2;
         text-align:center;
     }
-    .signoff{
-        order:3;
-    }
-
 }
 /*------------------Page-01 ends here--------------------- */
 /* Page -02 begins */
@@ -234,7 +242,7 @@ hr{
 .page2{
     padding: 30vh 12% ;
     min-height: 65vh;
-    min-width: 90vw;
+    max-width: 100vw;
     display: flex;
     justify-content: space-evenly;
     background-color:var(--text-color);
@@ -286,7 +294,7 @@ hr{
     margin-top: 20vh;
     padding: 28px 12% ;
     min-height: 65vh;
-    min-width: 90vw;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -344,7 +352,7 @@ body > section > div.page3 > div.skill > h3{
 .page4{
     padding: 20vh 12% ;
     min-height: 65vh;
-    min-width: 90vw;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -380,6 +388,9 @@ body > section > div.page3 > div.skill > h3{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .page4{
+        text-align: center;
     }
     .row1{
         gap: 9px;
@@ -445,3 +456,99 @@ body > section > div.page3 > div.skill > h3{
 .logo:nth-child(4){
     animation-delay: 1000ms;
 }
+
+/*----------------------------------- Cool hover animation CSS-----------------------------*/
+
+.line {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container {
+    margin-left: 10vw;
+    width: 20.3vw;
+  }
+  
+  #text:has(.fancy:hover) .word:not(.fancy:hover) {
+    opacity: 0.2;
+  }
+  
+  .fancy > .letter {
+    display: inline-block;
+    transition: transform 350ms ease;
+    z-index: 1; /* Add this line */
+  }
+  
+  .fancy:hover > .letter {
+    background: linear-gradient(to right,#a609c2,#9d2dcd, #673AB7 , #5947a9 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 800ms;
+  }
+  
+  .fancy:hover > .letter:nth-child(1) {
+    transform: translate(-110%, 42%) rotate(-14deg);
+    z-index: 2; /* Add this line */
+  }
+  
+  .fancy:hover > .letter:nth-child(2) {
+    transform: translate(-40%, 20%) rotate(4deg);
+    z-index: 2; /* Add this line */
+  }
+  
+  .fancy:hover > .letter:nth-child(3) {
+    transform: translate(-10%, 60%) rotate(-6deg);
+    z-index: 2; /* Add this line */
+  }
+  
+  .fancy:hover > .letter:nth-child(4) {
+    transform: translate(0%, 8%) rotate(-8deg);
+    z-index: 2; /* Add this line */
+  }
+  
+  .fancy:hover > .letter:nth-child(5) {
+    transform: translate(0%, -20%) rotate(5deg);
+    z-index: 2; /* Add this line */
+  }
+  
+  .fancy:hover > .letter:nth-child(6) {
+    transform: translate(0%, 20%) rotate(-3deg);
+    z-index: 2; /* Add this line */
+  }
+  
+  .fancy:hover > .letter:nth-child(7) {
+    transform: translate(0%, -40%) rotate(-5deg);
+    z-index: 2; /* Add this line */
+  }
+  
+  .fancy:hover > .letter:nth-child(8) {
+    transform: translate(0%, 15%) rotate(10deg);
+    z-index: 2; /* Add this line */
+  }
+  
+  .fancy:hover > .letter:nth-child(9) {
+    transform: translate(0%, -50%) rotate(8deg);
+    z-index: 2; /* Add this line */
+  }
+  
+  .fancy:hover > .letter:nth-child(10) {
+    transform: translate(0%, 15%) rotate(-6deg);
+    z-index: 2; /* Add this line */
+  }
+  
+  .fancy:hover > .letter:nth-child(11) {
+    transform: translate(50%, -10%) rotate(-3deg);
+    z-index: 2; /* Add this line */
+  }
+  
+  #text {
+    color: white;
+    font-size: 1.9rem;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .fancy {
+    position: relative;
+  }
+  
