@@ -477,7 +477,7 @@ body > section > div.page3 > div.skill > h3{
   }
   
   .fancy:hover > .letter {
-    background: linear-gradient(to right, #940fac, #890562 #a609c2, #673AB7, #37007e, #9d2dcd, #5947a9 );
+    background: linear-gradient(to right,#673AB7,#9d2dcd, #5947a9 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: transform 800ms;
