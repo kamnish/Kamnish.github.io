@@ -450,7 +450,7 @@ body > section > div.page3 > div.skill > h3{
         gap: 9px;
     }
     .blob{
-        display: none;
+        opacity: 0;
     }
 
 }
