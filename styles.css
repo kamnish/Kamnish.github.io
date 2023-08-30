@@ -411,7 +411,7 @@ body > section > div.page3 > div.skill > h3{
 }
 .page4>h3,h2{
     margin-bottom: 30px;
-    
+
 }
 .page4container{
     width: 80vw;
@@ -448,6 +448,9 @@ body > section > div.page3 > div.skill > h3{
     .row2{
         margin-left: 0;
         gap: 9px;
+    }
+    .blob{
+        display: none;
     }
 
 }
