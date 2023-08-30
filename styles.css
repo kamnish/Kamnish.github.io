@@ -27,12 +27,15 @@
   }
 h1{
     font-size: 3rem;
+    z-index: 3;
 }
 h2{
     font-size: 2rem;
+    z-index: 3;
 }
 h3{
     font-size: 1.5rem;
+    z-index: 3;
 }
 :root{
     --bg-color:#000;
@@ -73,20 +76,24 @@ body{
     animation: rotate 20s infinite;
     z-index: 1;
     opacity: 0.8;
+    filter: blur(150px);
   }
-  #blur {
+  /* #blur {
 
     position: absolute;
     z-index: 2;
     backdrop-filter: blur(12vmax);
-  }
+  } */
+.upp{
+    z-index: 3;
+}
 header{
     background-color: var(--bg-color);
     position: fixed;
     width: 100%;
     top:0;
     right: 0;
-    z-index:1001;
+    z-index:2;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -198,18 +205,21 @@ header{
     z-index: 3;
 }
 .myphoto{
-    height: 500px; 
+    height: 500px;
+    z-index: 3;
 }
 .name{
     display: flex;
     justify-content: center;
     align-items: end;
+    z-index: 3;
 }
 
 .photo{
     display: flex;
     align-items: end;
     justify-content: end;
+    z-index: 3;
 }
 hr{
     border-top: solid white 2px;
@@ -266,6 +276,7 @@ hr{
     height: 200px;
     margin-top: 20%;
     margin-right: 25%;
+    z-index: 3;
 }
 
 .page2{
@@ -283,10 +294,12 @@ hr{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    z-index: 3;
 }
 .aboutme{
     width:45vw;
     text-align: justify;
+    z-index: 3;
 }
 @media(max-width: 1280px){
     .page2{
@@ -321,6 +334,7 @@ hr{
 /*------------------Page-02 ends here--------------------- */
 /* Page-03 starts here SKILLS */
 .page3{
+
     margin-top: 20vh;
     padding: 28px 12% ;
     min-height: 65vh;
@@ -343,13 +357,15 @@ hr{
     padding: 28px 12% ;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 3;
 }
 body > section > div.page3 > div.skill > h3{
     margin-left: 12vw;
-
+    z-index: 3;
  } 
  .lastItemOnList{
     margin-bottom: 20vh;
+    z-index: 3;
  }
 @media(max-width:700px){   
     .page3{
@@ -381,6 +397,7 @@ body > section > div.page3 > div.skill > h3{
 /* -------------------Page-03 ends here------------------------------ */
 /* Page-04 begins here */
 .page4{
+    position: relative;
     padding: 20vh 12% ;
     min-height: 65vh;
     max-width: 100vw;
@@ -390,10 +407,11 @@ body > section > div.page3 > div.skill > h3{
     align-items: center;
     background-color:var(--text-color);
     color: var(--bg-color);
-    z-index: 3;
+    z-index: -1;
 }
 .page4>h3,h2{
     margin-bottom: 30px;
+    
 }
 .page4container{
     width: 80vw;
