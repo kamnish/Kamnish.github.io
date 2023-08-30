@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>Kamnish's Website</title>
-    <link rel="icon"type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Fira+Code&family=Libre+Baskerville&family=Merriweather&family=Mochiy+Pop+P+One&family=Montserrat&family=Poppins:wght@600&family=Sacramento&family=Trocchi&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Fira+Code&family=Libre+Baskerville&family=Merriweather&family=Mochiy+Pop+P+One&family=Montserrat&family=Poppins:wght@600&family=Sacramento&family=Trocchi&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!-- <script defer src="animation.js"></script> -->
 </head>
+
 <body>
-    <header>
-        <a href="#" class="logo"><i class="ri-code-s-slash-fill gc"></i></i></i><span>Kamnish</span></a>    
-        <ul class="navbar">
-            <li><a href="#home" class="active gc">Home</a></li>
-            <li><a href="#aboutMe">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contactMe">Contact</a></li>
-        </ul>
+    <!-- Basic function to counter -->
+    <!-- the mouse effect  -->
+    <div id="blob"></div>
+    <div id="blur">
+        <header>
+            <a href="#" class="logo"><i class="ri-code-s-slash-fill gc"></i></i></i><span>Kamnish</span></a>
+            <ul class="navbar">
+                <li><a href="#home" class="active gc">Home</a></li>
+                <li><a href="#aboutMe">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contactMe">Contact</a></li>
+            </ul>
 
-    <div class="main">
-        <div class="bx bx-menu " id="menu-icon"></div>
-    </div>
-    </header>
-
-    <section class="ultra_main">
-
-
+            <div class="main">
+                <div class="bx bx-menu " id="menu-icon"></div>
+            </div>
+        </header>
         <div class="page1" id="home">
             <div class="name  o">
                 <!-- <div class="container"> -->
 
-                    <div id="text">
-                        
-                        <div class="line">
-                            <p class="word gc">I'm </p> 
-                            <p class="word">kamnish </p> 
-                        </div>
-                        <div class="line">
-                            <p class="word"> Chandra</p> 
-                            <p class="word">A</p> 
-                        </div>
-                        <div class="line">
-                            <p id="pro" class="word fancy">Programmer</p> 
-                        </div>
-                        
+                <div id="text">
+
+                    <div class="line">
+                        <p class="word gc">I'm </p>
+                        <p class="word">kamnish </p>
                     </div>
+                    <div class="line">
+                        <p class="word"> Chandra</p>
+                        <p class="word">A</p>
+                    </div>
+                    <div class="line">
+                        <p id="pro" class="word fancy">Programmer</p>
+                    </div>
+
+                </div>
                 <!-- </div> -->
             </div>
-            <div class="photo o"><img class="myphoto "src="images/Subject.png" alt="Kamnish's Photo"></div>
+            <div class="photo o"><img class="myphoto " src="images/Subject.png" alt="Kamnish's Photo"></div>
         </div>
         <div class="page2" id="aboutMe">
             <div class="memoji"><img src="images/me.png" alt="My memoji"></div>
             <div class="aboutme">
                 <h2>About <span class="gc">Me</span></h2>
                 <br>
-                <p>Greetings, kindred soul! Within the vast tapestry of the digital realm, I warmly welcome you to my humble corner. I'm Kamnish Chandra, a spirited explorer currently immersed in the wondrous world of computer science as an undergraduate in my 3rd year. My journey is infused with an unyielding passion for the enchanting domains of DevOps and Frontend development. Through the artistry of programming languages like C, C++, Java, and Python, I weave my skills and embrace the ever-evolving nature of technology. Together, let us embark on an extraordinary odyssey, where knowledge intertwines with creativity, and inspiration blossoms at every turn.</p>
+                <p>Greetings, kindred soul! Within the vast tapestry of the digital realm, I warmly welcome you to
+                    my humble corner. I'm Kamnish Chandra, a spirited explorer currently immersed in the wondrous
+                    world of computer science as an undergraduate in my 3rd year. My journey is infused with an
+                    unyielding passion for the enchanting domains of DevOps and Frontend development. Through the
+                    artistry of programming languages like C, C++, Java, and Python, I weave my skills and embrace
+                    the ever-evolving nature of technology. Together, let us embark on an extraordinary odyssey,
+                    where knowledge intertwines with creativity, and inspiration blossoms at every turn.</p>
             </div>
         </div>
-        <span id="skills" style="margin-top: 80px; color:black">.</span>
-        <div class="page3">
-            <div class="skillheading"><h2><span class="gc">MY</span> SKILLS</h2></div>
+        <div class="page3" id="skills">
+            <div class="skillheading">
+                <h2><span class="gc">MY</span> SKILLS</h2>
+            </div>
             <div class="skill">
                 <h3>Programming Language</h3>
                 <ul class="page3container">
@@ -84,7 +95,8 @@
                     <li><img class="logo hidden" src="images/git.svg" alt="git icon"></li>
                     <li><img class="logo hidden" src="images/githubfinal.png" alt="github icon"></li>
                     <li><img class="logo hidden" src="images/vs.svg" alt="Visual code icon"></li>
-                    <li><img class="logo hidden" width="100" height="100" src="images/icons8-database-100.png" alt="database--v1"/></li>
+                    <li><img class="logo hidden" width="100" height="100" src="images/icons8-database-100.png"
+                            alt="database--v1" /></li>
                 </ul>
             </div>
         </div>
@@ -94,7 +106,9 @@
             <div class="page4container">
                 <div class="row1">
                     <img src="images/mail-line.svg" alt="Mail">
-                    <a href = "mailto:kamnish.me@icloud.com"><h3>kamnish.me@icloud.com</h3></a>
+                    <a href="mailto:kamnish.me@icloud.com">
+                        <h3>kamnish.me@icloud.com</h3>
+                    </a>
                 </div>
                 <div class="row2">
                     <img src="images/phone-line.svg" alt="Phone Number">
@@ -102,17 +116,18 @@
                 </div>
             </div>
         </div>
-    </section>
         <footer>
             <div class="cont">
                 <div class="footerc">
                     <h3 class="rowa">Copyright © 2023. All rights are reserved</h3>
-                    <div  class="rowb">
+                    <div class="rowb">
                         <a href="https://github.com/kamnish"><img src="images/github-fill.svg" alt="github link"></a>
-                        <a href="https://www.linkedin.com/in/kamnish-chandra-73ba51274/"><img src="images/linkedin-box-line.svg" alt="Linked In link"></a>
+                        <a href="https://www.linkedin.com/in/kamnish-chandra-73ba51274/"><img
+                                src="images/linkedin-box-line.svg" alt="Linked In link"></a>
                     </div>
                 </div>
             </div>
         </footer>
-    <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </div>
 </body>
